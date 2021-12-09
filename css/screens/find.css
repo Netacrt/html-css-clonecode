@@ -103,3 +103,21 @@
 .open-post__heart-count span {
   margin-left: 3px;
 }
+@keyframes heartbeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.1);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.open-post__heart-count:hover i {
+  animation: heartbeat 1s linear infinite;
+} /*해당코드는 heartcount class내의 icon이 cursor가 위에 있을때 작동하는 애니메이션을 의미한다.*/
