@@ -22,3 +22,15 @@
   right: -6px;
   top: -6px;
 }
+
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+/*.screen-header__icon .fa-cog:hover {
+  animation: rotateCog 1s linear infinite;
+} 해당 코드는 그닥 적용시키고 싶지 않아 주석 처리함.
