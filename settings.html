@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>More-kitkat clone</title>
+    <title>Settings-kitkat clone</title>
     <script language="javascript">
         function time(){
          var time= new Date(); //시간받기위해서 new date
@@ -33,74 +33,40 @@
         </div>
     </div>
 
-    <header class="screen-header">
-        <h1 class="screen-header__title">More</h1>
-        <div class="screen-header__icon">
-            <span><i class="fas fa-search fa-lg"></i></span>
-            <span><i class="fas fa-music fa-lg"></i></span>
-            <span>
-                <i class="fas fa-cog fa-lg"></i>
-            </span>
+    <header class="alt-header">
+        <div class="alt-header__column">
+            <a href="more.html">
+                <i class="fas fa-angle-left fa-3x"></i>
+            </a>
+        </div>
+        <div class="alt-header__title">Settings</div>
+        <div class="alt-header__column">
+            <i class="fas fa-search fa-2x"></i>
         </div>
     </header>
 
-    <main class="main-screen more-screen">
-        <div class="user-component">
-            <div class="user-component__column">
-                <img src="testimg.jpg" class="user-component__avatar user-component__avatar--xl" />
-                <div class="user-component__text">
-                    <h4 class="user-component__name">Neta_crt</h4>
-                    <h6 class="user-component__subtitle">
-                        <span>+82-10-2920-0000</span>
-                        <i class="fas fa-exclamation-circle"></i>
-                    </h6>
+    <main class="main-screen">
+        <ul class="settings-list">
+            <li class="settings__setting">
+                <div class="settings__setting-column">
+                    <i class="fas fa-bullhorn"></i>
+                    <span>Notices</span>
                 </div>
-            </div>
-            <div class="user-component__column">
-                <i class="far fa-comment-alt fa-2x"></i>
-            </div>
-        </div>
-        <div class="icon-raw">
-            <div class="icon-raw__icon">
-                <i class="far fa-calendar-check"></i>
-                <span>Calender</span>
-            </div>
-            <div class="icon-raw__icon">
-                <i class="fas fa-archive"></i>
-                <span>Talk Drive</span>
-            </div>
-            <div class="icon-raw__icon">
-                <i class="far fa-laugh"></i>
-                <span>Emoticons</span>
-            </div>
-            <div class="icon-raw__icon">
-                <i class="fas fa-brush"></i>
-                <span>Themes</span>
-            </div>
-        </div>
-        <div class="icon-raw">
-            <div class="icon-raw__icon">
-                <i class="fas fa-file-invoice"></i>
-                <span>Account</span>
-            </div>
-            <div class="icon-raw__icon">
-                <i class="far fa-comments"></i>
-                <span>Openchat</span>
-            </div>
-            <div class="blank"></div>
-            <div class="blank"></div>
-        </div>
-        <div class="more-suggestions">
-            <h4 class="more-suggestions__title">Suggestions</h4>
-            <div class="more-suggestions__icons">
-                <div class="more-suggestions__icon">
-                    <div class="more-suggestions__icon-image">
-                        <i class="fas fa-quote-right"></i>
-                    </div>
-                    <span class="more-suggestions__icon-text">Testicon</span>
+            </li>
+            <li class="settings__setting">
+                <div class="settings__setting-column">
+                    <i class="fas fa-flask"></i>
+                    <span>Kitkat Lab</span>
                 </div>
-            </div>
-        </div>
+            </li>
+            <li class="settings__setting">
+                <div class="settings__setting-column">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Version</span>
+                </div>
+                <div class="settings__setting-columne">Latest Version</div>
+            </li>
+        </ul>
     </main>
 
     <nav class="nav">
@@ -125,6 +91,10 @@
             </li>
         </ul>
     </nav>
+
+    <div id="no-mobile">
+        <span>Your Screen is Too Big.</span>
+    </div>
 
     <script
     src="https://kit.fontawesome.com/6478f529f2.js"
